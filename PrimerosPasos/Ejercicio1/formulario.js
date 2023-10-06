@@ -9,9 +9,25 @@ window.addEventListener("DOMContentLoaded",function(){
 
     formulario.addEventListener("submit", function(){
         console.log("Submit realizado");
+
         var nombre = document.querySelector("#nombre").value;
         var apellido = document.querySelector("#apellidos").value;
-        var edad = document.querySelector("#edad").value;
+        var edad =parseInt(document.querySelector("#edad").value);
+
+        if(nombre.trim() == null || nombre.trim().length == 0){
+            alert("El nombre no es valido");
+            return false;
+        }
+
+        if(apellido.trim() == null || apellido.trim().length == 0){
+            alert("El apellido no es valido");
+            return false;
+        }
+
+        if(edad== null || edad <= 0 || isNaN(edad)){
+            alert("La edad no es valido");
+            return false;
+        }
 
         mostrarDatos(nombre,apellido,edad);
     });
