@@ -1,0 +1,33 @@
+*{
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+#containerP {
+    background-image: url("/PrimerosPasos/Frases/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    backdrop-filter: blur(2px);
+    position: relative;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Alinear el contenido del contenedor al centro */
+    cursor: pointer;
+    border: 1px solid rgb(70, 70, 70); 
+    padding: 50px;
+    backdrop-filter: blur(5px);
+}
+
+.author{
+    margin-bottom: 20px;
+}
