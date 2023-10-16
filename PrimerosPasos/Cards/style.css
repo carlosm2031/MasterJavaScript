@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.titulo{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #007BFF; /* Color de fondo del encabezado (ajusta según tus preferencias) */
+    color: #fff; /* Color del texto en el encabezado (ajusta según tus preferencias) */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form{
+    margin: 5px;
+    padding: 5px;
+}
+
+.cards{
+    margin: 20px;
+    padding: 10px;
+}
+/*  */
+
+.card {
+    display: inline-block;
+    width: 250px;
+    height: 600px;
+    margin: 10px;
+    background-color: rgb(219, 219, 219);
+    text-align: center;
+    padding: 10px;
+    float: left; /* Utiliza float para alinear las tarjetas en filas */
+    clear: none;
+}
+
+.image {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    max-height: 250px; /* Define una altura máxima para la imagen */
+    display: block; /* Elimina espacios en blanco no deseados debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente en su contenedor */
+}
+
+.c_titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.157);
+}
+
+.parraf {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+
+.form {
+    margin: 20px; /* Margen externo para separar el formulario de las tarjetas */
+    padding: 20px; /* Relleno interno para espaciado dentro del formulario */
+    background-color: #f9f9f9; /* Color de fondo del formulario */
+    border: 1px solid #ccc; /* Borde alrededor del formulario */
+    border-radius: 5px; /* Borde redondeado para un aspecto más suave */
+}
+
+/* Estilos para las etiquetas de los campos de entrada */
+.form label {
+    display: block; /* Hace que cada etiqueta ocupe una línea completa */
+    margin-bottom: 5px; /* Espaciado entre etiquetas */
+    font-weight: bold; /* Estilo en negrita para las etiquetas (ajusta según tus preferencias) */
+}
+
+/* Estilos para los campos de entrada de texto */
+.form input[type="text"] {
+    width: 100%; /* Ocupa todo el ancho disponible del formulario */
+    padding: 10px; /* Relleno interno para mayor comodidad al escribir */
+    margin-bottom: 15px; /* Espaciado entre los campos de entrada */
+    border: 1px solid #ccc; /* Borde alrededor de los campos de entrada */
+    border-radius: 5px; /* Borde redondeado para suavizar las esquinas */
+}
+
+/* Estilos para el botón "Guardar" */
+#enviar {
+    background-color: #007BFF; /* Color de fondo del botón (ajusta según tus preferencias) */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Relleno interno del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Borde redondeado para suavizar las esquinas */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+/* Estilos para el botón "Guardar" al pasar el cursor por encima */
+#enviar:hover {
+    background-color: #0056b3; /* Color de fondo modificado al pasar el cursor */
+}
