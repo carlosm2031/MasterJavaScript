@@ -1,0 +1,16 @@
+body{
+    background-image: url("https://services.meteored.com/img/article/y-ahora-que-hacemos-con-las-hojas-23651-1_1280.jpg");
+    background-attachment: fixed;
+}
+
+#logo{
+    background-color: #ca3413;
+}
+
+#menu ul li:hover{
+    background-color: #ca3413;
+}
+
+.boton-more{
+    background-color: #ca3413;
+}

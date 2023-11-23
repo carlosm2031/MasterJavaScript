@@ -1,0 +1,16 @@
+body{
+    background-image: url("https://s1.eestatic.com/2020/06/03/curiosidades/curiosidades_494961313_153077108_1706x960.jpg");
+    background-attachment: fixed;
+}
+
+#logo{
+    background-color: #1f87c4;
+}
+
+#menu ul li:hover{
+    background-color: #1f87c4;
+}
+
+.boton-more{
+    background-color:#1f87c4;
+}

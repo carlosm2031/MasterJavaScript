@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link id="theme" rel="stylesheet" href="css/green.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Proyecto con JavaScript</title>
+</head>
+
+<body>
+
+    <div id="changeTheme">
+        <div id="to-green"> </div>
+        <div id="to-red"> </div>
+        <div id="to-blue"> </div>
+    </div>
+
+    <section id="global">
+        <!-- Cabecera -->
+        <header>
+            <div id="logo">
+                <h1>Proyecto JS</h1>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-mi.html">Sobre mí</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Slider -->
+        <div class="galeria">
+            <div><img src="https://d1bvpoagx8hqbg.cloudfront.net/originals/il-caffe-294bd99eb2a6c45064f1091f29e7ff49.jpg" title="Coffee 1" /></div>
+            <div><img src="https://inchiostrovirtuale.it/wp-content/uploads/2018/09/caff%C3%A8-espresso.jpg" title="Coffee 2" /></div>
+            <div><img src="https://www.my-personaltrainer.it/2020/05/05/caffe-americano_900x760.jpeg" title="Coffee 3" /></div>
+        </div>
+
+        <!-- Contenido -->
+        <section id="content">
+            <div id="posts"">
+                
+            </div>
+
+            <aside id="sidebar">
+                <div id="about">
+                    <h4><span>¿Quién soy?</span></h4>
+                    <img src="https://static.tuasaude.com/media/article/cb/cc/doencas-causadas-pelo-caramujo_22020_l.jpg"
+                        alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quos deserunt eveniet, neque
+                        consectetur libero ab cum nostrum incidunt officiis. Perferendis molestias enim tempora aliquam
+                        voluptas cum, necessitatibus maxime dolores?</p>
+                </div>
+
+                <div id="login">
+                    <h4><span>Identificate</span></h4>
+                    <form >
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="form_name">
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+
+                        <label for="pasword">Contraseña</label>
+                        <input type="password" name="password">
+
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        Master en JavaScript &copy;
+        <a href="#" class="subir">Ir arriba</a>
+    </footer>
+</body>
+
+</html>

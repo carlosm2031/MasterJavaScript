@@ -1,0 +1,16 @@
+body{
+    background-image: url("https://images.pexels.com/photos/2382325/pexels-photo-2382325.jpeg?cs=srgb&dl=pexels-suzy-hazelwood-2382325.jpg&fm=jpg");
+    background-attachment: fixed;
+}
+
+#logo{
+    background-color: #235e3d;
+}
+
+#menu ul li:hover{
+    background-color: #235e3d;
+}
+
+.boton-more{
+    background-color: #235e3d;
+}
