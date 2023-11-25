@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "F:/Cursos/Victor Robles/Master en JavaScript/PrimerosPasos/Poo-TypeScript/js/dist",
+
+    "allowJs": true,
+    "target": "es5"
+  },
+  "include": ["./js/**/*"]
+}
