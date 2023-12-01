@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "aprendiendo-angular": {
+    "segundo-intento": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/aprendiendo-angular",
+            "outputPath": "dist/segundo-intento",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "aprendiendo-angular:build:production"
+              "buildTarget": "segundo-intento:build:production"
             },
             "development": {
-              "buildTarget": "aprendiendo-angular:build:development"
+              "buildTarget": "segundo-intento:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "aprendiendo-angular:build"
+            "buildTarget": "segundo-intento:build"
           }
         },
         "test": {
