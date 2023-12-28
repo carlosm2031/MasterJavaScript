@@ -4,12 +4,13 @@ import { ProjectService } from '../../services/project.service';
 import { FormsModule } from '@angular/forms';
 import { UploadService } from '../../services/upload.service';
 import { Global } from '../../services/global';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-create',
   standalone: true,
-  imports: [FormsModule],
+  imports: [CommonModule,FormsModule],
   templateUrl: './create.component.html',
   styleUrl: './create.component.sass',
   providers: [ProjectService, UploadService]

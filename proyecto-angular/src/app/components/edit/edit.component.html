@@ -1,0 +1,45 @@
+<div class="container">
+    <h2>{{title}}</h2>
+  
+    
+    <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)" enctype="multipart/form-data">
+      <p>
+        <label for="name">Nombre del Proyecto</label>
+        <input type="text" id="name" name="name" [(ngModel)]="project.name" required #name="ngModel" >
+        <span class="formError" ngIf="name.invalid && name.touched">El nombre es obligatorio</span>
+      </p>
+  
+      <p>
+        <label for="description">Descripción</label>
+        <textarea id="description" name="description" [(ngModel)]="project.description" required
+          #description="ngModel"></textarea>
+        <span class="formError" ngIf="description.invalid && description.touched">La descripción es obligatoria</span>
+      </p>
+  
+      <p>
+        <label for="category">Categoria</label>
+        <input type="text" id="category" name="category" [(ngModel)]="project.category" required #category="ngModel">
+        <span class="formError" ngIf="category.invalid && category.touched">La categoria es obligatoria</span>
+      </p>
+  
+      <p>
+        <label for="year">Año</label>
+        <input type="number" id="year" name="year" [(ngModel)]="project.year" required #year="ngModel">
+        <span class="formError" ngIf="year.invalid && year.touched">El año es obligatorio</span>
+      </p>
+  
+      <p>
+        <label for="langs">Lenguajes</label>
+        <input type="text" id="langs" name="langs" [(ngModel)]="project.langs" required #langs="ngModel">
+        <span class="formError" ngIf="langs.invalid && langs.touched">Las lenguajes son obligatorias</span>
+      </p>
+  
+      <p>
+        <label for="image">Imagen del proyecto</label>
+        <input type="file" placeholder="Subir Imagen" name="image" (change)="fileChangeEvent($event)">
+      </p>
+  
+      <input type="submit" value="Actualizar" href="http://localhost:4200/proyectos" [disabled]="projectForm.invalid">
+    </form>
+  </div>
+  

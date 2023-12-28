@@ -1,18 +1,19 @@
-<div class="container">
-    <div class="image">
-        <img src="{{ url + 'get-image/' + projectt.image }}"  />
+<div class="container" *ngIf="projectt">
+    <div class="image" *ngIf="projectt.image">
+        <img src="{{ url + 'get-image/' + projectt.image }}" />
     </div>
     
     <div class="data">
         <h1>{{projectt.name}}</h1>
-    <h2>{{projectt.description}}</h2>
-    <p>{{projectt.category}}</p>
-    <p>{{projectt.langs}}</p>
-    <p>
-        <a href="#" class="button-edit">Editar</a>
-        <a href="#" class="button-delete">Eliminar</a>
-    </p>
-    </div>
+        <h2>{{projectt.description}}</h2>
+        <p>{{projectt.category}}</p>
+        <p>{{projectt.langs}}</p>
+        <p>
+            
+            <a [routerLink]="['/editar-proyecto', projectt._id]" href="javascript:void(0);" class="button-edit">Editar</a>
+            <a (click)="deleteProject(projectt._id)" href="http://localhost:4200/proyectos" class="button-delete">Eliminar</a>
+            
+        </p>
 
-    
+    </div>
 </div>

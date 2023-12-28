@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-contact',
@@ -9,4 +11,11 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  constructor() {
+    
+  }
+
+  ngOnInit(){
+    $("header").css("background-color", "black");
+  }
 }

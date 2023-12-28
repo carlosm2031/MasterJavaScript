@@ -5,11 +5,14 @@ import { Global } from '../../services/global';
 import {Router, ActivatedRoute, Params} from '@angular/router';
 import { error } from 'console';
 import { switchMap } from 'rxjs/operators';
+import { EditComponent } from '../edit/edit.component';
+import { CommonModule, NgForOf } from '@angular/common'; // Add this import
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-detail',
   standalone: true,
-  imports: [],
+  imports: [EditComponent,CommonModule,RouterModule],
   templateUrl: './detail.component.html',
   styleUrl: './detail.component.sass',
   providers: [ProjectService]
@@ -46,6 +49,18 @@ export class DetailComponent implements OnInit{
         console.log(error);
       }
     );
+  }
+
+  deleteProject(id:string){
+    this._projectService.deletedProject(id).subscribe(
+      response =>{
+        if(response.project){
+          this._router.navigate(['proyectos/']);
+        }
+      },error =>{
+        console.log(error);
+      }
+    )
   }
 
   // getProject(id:string){
